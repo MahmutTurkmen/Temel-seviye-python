@@ -1,4 +1,4 @@
-# Önce for döngüsünün nasıl kullanılacağını öğrenelim😊
+# Önce for döngüsünün nasıl kullanılacağını görelim😊
 
 # 1-) Değişkenin içinde for döngüsü ile gezinmek 
 # (Bu str, list, set, tuple vb. için gerçerli, int, float vb. için değil.)
