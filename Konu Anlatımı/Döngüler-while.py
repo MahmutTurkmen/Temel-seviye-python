@@ -1,5 +1,5 @@
 # Python'daki ilk döngümüz 'while' döngüsüdür.
-# while döngüsü şu şekilde kullanılır:
+# Şimdi while döngüsünün nasıl kullanılacağını görelim 😊
 # i= 0  --> döngü değişkenini tanımlamalıyız.
 # while koşul: --> Koşul doğru olduğu sürece while döngüsü çalışır.
 #   codes 
