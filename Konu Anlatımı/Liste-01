@@ -1,0 +1,23 @@
+# Python'da Listeler
+
+# Liste tanımlama
+sayilar= [10, 20, 30, 40]
+
+# Listeyi ekrana yazdırma
+print("Liste: ", sayilar)
+
+# Listeye eleman ekleme
+sayilar.append(50)
+print("Eleman eklendikten sonra liste: ", sayilar)
+
+# Liste elemanına erişme (index kullanarak)
+print("İlk eleman: ", sayilar[0])
+
+# Liste uzunluğunu (eleman sayısını) öğrenme
+print("Liste uzunluğu: ", len(sayilar))
+
+# Liste üzerinde dolaşma
+print("Liste elemanları: ")
+
+for sayi in sayilar:
+    print(sayi)
