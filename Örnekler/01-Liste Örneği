@@ -1,0 +1,28 @@
+# Öğrenci notlarını tutan liste
+notlar= []
+
+# Kullanıcıdan 5 not alma
+for i in range(5):
+    not_degeri= int(input("Not giriniz: "))
+    notlar.append(not_degeri)
+
+# Notları ekrana yazdırma
+print("Girilen notlar: ", notlar)
+
+# Ortalama hesaplama
+ortalama= sum(notlar) / len(notlar)
+print("Not ortalaması: ", ortalama)
+
+# En yüksek not
+en_yuksek= max(notlar)
+print("En yüksek not: ", en_yuksek)
+
+# En düşük not
+en_dusuk= min(notlar)
+print("En düşük not: ", en_dusuk)
+
+# Dersi geçen öğrencileri bulma
+print("Geçen öğrencilerin notları: ")
+for not_degeri in notlar:
+    if not_degeri >= 50:
+        print(not_degeri)
