@@ -1,0 +1,27 @@
+# Python'da listelerde temel işlemler ve fonksiyonlar
+
+# meyveler listesi oluşturalım
+meyveler= ["elma", "armut", "muz", "çilek"]
+print("Başlangıç listesi: ", meyveler) # Çıktı: ['elma', 'armut', 'muz', 'çilek']
+
+# Eleman güncelleme
+meyveler[1]= "portakal"
+print("Güncellendikten sonra: ", meyveler # Çıktı: ['elma', 'portakal', 'muz', 'çilek']
+
+# Eleman silme (remove ile)
+meyveler.remove("muz")
+print("Eleman silindikten sonra: ", meyveler) # Çıktı: ['elma', 'portakal', 'çilek']
+
+# Eleman silme (pop - index ile)
+meyveler.pop(0)
+print("İlk eleman silindikten sonra meyveler: ", meyveler) # Çıktı: ['portakal', 'çilek']
+
+# sayilar listesini oluşturalım
+sayilar= [1, 2, 3, 4, 5, 6]
+
+# Liste dilimleme (slicing)
+print("İlk 3 eleman: ", sayilar[:3]) # Çıktı: İlk 3 eleman:  [1, 2, 3]
+print("Son 4 eleman: ", sayilar[-4:]) # Çıktı: Son 4 eleman:  [3, 4, 5, 6]
+
+# Dilimleme ile listeyi tersine çevirme
+print("Ters çevrilmiş liste: ", sayilar[::-1]) # Çıktı: Ters çevrilmiş liste:  [6, 5, 4, 3, 2, 1]
