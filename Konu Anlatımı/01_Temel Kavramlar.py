@@ -1,3 +1,4 @@
+# Python Temel Kavramlar
 # Bu bir yorum satırıdır (yorumlar # ile başlar)
 # Ekrana mesaj yazdırma
 print("Hello World!") # Çıktı: Hello World!
