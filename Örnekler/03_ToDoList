@@ -1,0 +1,48 @@
+# Python'da Listeler ile To-Do List Uygulaması
+
+# Boş görev listesi oluşturma
+gorevler= []
+
+while True:
+    print("\n--- Yapılacaklar Listesi ---")
+    print("1. Görev ekle")
+    print("2. Görevleri göster")
+    print("3. Görevi sil")
+    print("4. Çıkış")
+
+    secim= input("Seçiminizi yapın: ")
+
+    # Görev ekleme
+    if secim== "1":
+        gorev= input("Eklenecek görevi yazın: ")
+        gorevler.append(gorev) # Listeye ekleme
+        print("Görev eklendi. ")
+    # Görevleri Gösterme
+    elif secim == "2":
+        if len(gorevler) == 0:
+            print("Hiç görev yok.")
+        else:
+            print("\nGörevler: ")
+            for i, gorev in enumerate(gorevler, start= 1):
+                print(f"{i}. {gorev}")
+    # Görev silme
+    elif secim == "3":
+        if len(gorevler) == 0:
+            print("Silinecek görev yok.")
+        else:
+            for i, gorev in enumerate(gorevler, start= 1):
+                print(f"{i}. {gorev}")
+            secim= int(input("Silmek istediğiniz görev numarası: ")) - 1
+
+            if 0 <= secim < len(gorevler):
+                gorevler.pop(secim)
+                print("Görev silindi. ")
+            else:
+                print("Geçersiz numara! ")
+    # Çıkış
+    elif secim == "4":
+        print("Programdan çıkılıyor...")
+        break
+
+    else:
+        print("Geçersiz seçim! ")
